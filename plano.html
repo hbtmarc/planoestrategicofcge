@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blueprint Estratégico | A Transformação Digital da FC Gestão</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #0F172A; /* slate-900 */
+        }
+        
+        .animated-item {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .animated-item.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #38bdf8, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 2rem;
+            top: 2.5rem;
+            bottom: -2.5rem;
+            width: 3px;
+            background: linear-gradient(to bottom, #1e293b, #334155, #1e293b);
+            transform: translateX(-50%);
+        }
+        .timeline-item:last-child .timeline-line {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300">
+
+    <!-- Header -->
+    <header class="bg-slate-900/70 backdrop-blur-lg sticky top-0 z-40 border-b border-slate-700">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-xl font-bold text-white">Blueprint Estratégico</h1>
+            <p class="text-sm text-slate-400">FC Gestão Estratégica</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-16 sm:py-24">
+
+        <!-- Hero Section -->
+        <section class="text-center max-w-4xl mx-auto animated-item">
+            <span class="inline-flex items-center rounded-full bg-blue-500/10 px-4 py-1.5 text-sm font-medium text-blue-400 mb-6 ring-1 ring-inset ring-blue-500/20">
+                Uma Visão Completa do Futuro Digital
+            </span>
+            <h2 class="text-4xl md:text-6xl font-black tracking-tighter text-white">O Blueprint para sua <span class="gradient-text">Liderança Digital</span></h2>
+            <p class="mt-6 text-lg text-slate-400 max-w-3xl mx-auto">
+                Este é o roteiro detalhado que transformará o site da FC Gestão de um ativo digital passivo em um motor de crescimento, projetado para atrair, educar e converter os clientes certos.
+            </p>
+        </section>
+        
+        <!-- Timeline Section -->
+        <section class="mt-28 max-w-4xl mx-auto">
+            <h3 class="text-4xl font-bold text-center text-white mb-20 animated-item">Nossa Jornada de Transformação: <br>4 Semanas para o Lançamento</h3>
+            <div class="space-y-20">
+                <!-- Semana 1 -->
+                <div class="relative timeline-item animated-item">
+                    <div class="timeline-line"></div>
+                    <div class="flex items-start">
+                        <div class="z-10 flex items-center justify-center w-16 h-16 bg-slate-800 border-2 border-slate-700 rounded-full shadow-lg">
+                             <svg class="text-blue-400" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <div class="ml-8">
+                            <h4 class="text-sm font-bold uppercase text-blue-400 tracking-wider">Fase 1: Imersão e Estratégia</h4>
+                            <h5 class="text-2xl font-bold text-white mt-1">Definindo o Alicerce do Sucesso</h5>
+                            <p class="text-slate-400 mt-3 mb-6">Nesta primeira semana, mergulhamos no seu negócio para traduzir seus objetivos em uma estratégia digital sólida, garantindo que cada passo seguinte seja dado na direção certa.</p>
+                            <ul class="space-y-3 text-slate-300">
+                                <li class="flex items-center"><span class="text-blue-400 mr-3">&#10003;</span> Reunião de Kick-off e alinhamento de metas.</li>
+                                <li class="flex items-center"><span class="text-blue-400 mr-3">&#10003;</span> Análise aprofundada de palavras-chave estratégicas.</li>
+                                <li class="flex items-center"><span class="text-blue-400 mr-3">&#10003;</span> Definição da arquitetura visual e da experiência do usuário.</li>
+                                <li class="flex items-center"><span class="text-blue-400 mr-3">&#10003;</span> Planejamento da estrutura de conteúdo focada em autoridade.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Semana 2 -->
+                <div class="relative timeline-item animated-item">
+                    <div class="timeline-line"></div>
+                    <div class="flex items-start">
+                        <div class="z-10 flex items-center justify-center w-16 h-16 bg-slate-800 border-2 border-slate-700 rounded-full shadow-lg">
+                            <svg class="text-blue-400" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+                        </div>
+                        <div class="ml-8">
+                            <h4 class="text-sm font-bold uppercase text-blue-400 tracking-wider">Fase 2: Design e Conteúdo Pilar</h4>
+                            <h5 class="text-2xl font-bold text-white mt-1">Construindo a Experiência e a Autoridade</h5>
+                            <p class="text-slate-400 mt-3 mb-6">Com a estratégia definida, começamos a dar vida ao novo site. Focamos em criar uma página inicial que converte e no conteúdo que posicionará sua empresa como líder no serviço mais importante.</p>
+                            <ul class="space-y-3 text-slate-300">
+                                <li class="flex items-center"><span class="text-blue-400 mr-3">&#10003;</span> Desenvolvimento visual da nova página inicial.</li>
+                                <li class="flex items-center"><span class="text-blue-400 mr-3">&#10003;</span> Criação da página pilar: "Estudo de Dispersão Atmosférica".</li>
+                                <li class="flex items-center"><span class="text-blue-400 mr-3">&#10003;</span> Redação de textos persuasivos e otimizados para o Google.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Semana 3 -->
+                <div class="relative timeline-item animated-item">
+                    <div class="timeline-line"></div>
+                    <div class="flex items-start">
+                        <div class="z-10 flex items-center justify-center w-16 h-16 bg-slate-800 border-2 border-slate-700 rounded-full shadow-lg">
+                           <svg class="text-blue-400" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        <div class="ml-8">
+                            <h4 class="text-sm font-bold uppercase text-blue-400 tracking-wider">Fase 3: Desenvolvimento e Refinamento</h4>
+                            <h5 class="text-2xl font-bold text-white mt-1">Finalização e Testes de Qualidade</h5>
+                            <p class="text-slate-400 mt-3 mb-6">Nesta fase, finalizamos todas as páginas de suporte e submetemos o site a uma bateria de testes rigorosos, garantindo que a performance, a responsividade e a experiência sejam impecáveis.</p>
+                             <ul class="space-y-3 text-slate-300">
+                                <li class="flex items-center"><span class="text-blue-400 mr-3">&#10003;</span> Criação das páginas de serviços, sobre e contato.</li>
+                                <li class="flex items-center"><span class="text-blue-400 mr-3">&#10003;</span> Testes de performance para garantir carregamento ultrarrápido.</li>
+                                <li class="flex items-center"><span class="text-blue-400 mr-3">&#10003;</span> Auditoria de qualidade e revisão final do conteúdo.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Semana 4 -->
+                <div class="relative timeline-item animated-item">
+                     <div class="flex items-start">
+                        <div class="z-10 flex items-center justify-center w-16 h-16 bg-slate-800 border-2 border-slate-700 rounded-full shadow-lg">
+                           <svg class="text-blue-400" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-2.1 2.1-2.2 5.6-0.2 7.6s5.5 1.9 7.6-0.2c4.2-4.2 1.9-11.2-4-17.1C2.1-2.8-5-0.1-9.2 4.1c-2.1 2.1-2.2 5.6-0.2 7.6s5.5 1.9 7.6-0.2"></path></svg>
+                        </div>
+                        <div class="ml-8">
+                            <h4 class="text-sm font-bold uppercase text-blue-400 tracking-wider">Fase 4: Lançamento e Otimização</h4>
+                            <h5 class="text-2xl font-bold text-white mt-1">Início da Nova Era Digital</h5>
+                            <p class="text-slate-400 mt-3 mb-6">O grande dia. Lançamos o novo site e iniciamos o monitoramento de perto para garantir que a transição seja perfeita e que os resultados comecem a aparecer desde o primeiro momento.</p>
+                            <ul class="space-y-3 text-slate-300">
+                                <li class="flex items-center"><span class="text-blue-400 mr-3">&#10003;</span> Deploy e publicação do novo site.</li>
+                                <li class="flex items-center"><span class="text-blue-400 mr-3">&#10003;</span> Configuração e envio do novo mapa do site ao Google.</li>
+                                <li class="flex items-center"><span class="text-blue-400 mr-3">&#10003;</span> Início do monitoramento de performance e tráfego (90 dias).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategy Sections -->
+        <div class="mt-28 space-y-28">
+            <!-- Diagnóstico -->
+            <section class="animated-item">
+                <div class="text-center max-w-3xl mx-auto">
+                     <h3 class="text-4xl font-bold text-white">O Ponto de Partida: Análise Estratégica</h3>
+                     <p class="mt-4 text-lg text-slate-400">Analisamos o cenário atual para identificar com precisão onde estamos e, mais importante, para onde vamos. Esta clareza é a base de toda a estratégia.</p>
+                </div>
+                <div class="mt-16 grid md:grid-cols-2 gap-8">
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
+                        <h4 class="text-xl font-bold text-white">O Que Funciona Hoje</h4>
+                        <p class="mt-2 text-slate-400 mb-4">O site atual possui uma base sólida de performance e demonstra claramente a conformidade regulatória, um poderoso sinal de confiança para clientes.</p>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
+                        <h4 class="text-xl font-bold text-white">A Oportunidade Oculta</h4>
+                        <p class="mt-2 text-slate-400">O mercado digital para "Estudo de Dispersão Atmosférica" carece de um líder. Focaremos em dominar este nicho de alto valor, transformando o site em uma autoridade no assunto.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Arquitetura Hub & Spoke -->
+            <section class="animated-item">
+                <div class="text-center max-w-3xl mx-auto">
+                     <h3 class="text-4xl font-bold text-white">A Estrutura da Liderança: O Modelo Hub & Spoke</h3>
+                     <p class="mt-4 text-lg text-slate-400">Para nos tornarmos a referência número 1 para o Google, não basta ter uma boa página. Precisamos de uma estrutura inteligente que demonstre nossa profunda expertise.</p>
+                </div>
+                 <div class="mt-16 bg-slate-800 p-8 rounded-2xl border border-slate-700">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-6 text-center">
+                        <div class="flex flex-col items-center">
+                            <div class="flex items-center justify-center w-28 h-28 rounded-full bg-blue-500/10 text-blue-300 font-bold border-2 border-blue-500/30">Artigo<br>de Blog</div>
+                        </div>
+                        <svg class="hidden md:block text-slate-600" width="80" height="20" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 10H80" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"></path></svg>
+                        <div class="flex items-center justify-center w-40 h-40 rounded-full bg-blue-500 text-white font-black text-2xl shadow-lg shadow-blue-500/20">HUB</div>
+                        <svg class="hidden md:block text-slate-600" width="80" height="20" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 10H80" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"></path></svg>
+                         <div class="flex flex-col items-center">
+                             <div class="flex items-center justify-center w-28 h-28 rounded-full bg-blue-500/10 text-blue-300 font-bold border-2 border-blue-500/30">Página<br>de Serviço</div>
+                        </div>
+                    </div>
+                    <p class="mt-8 text-center max-w-3xl mx-auto text-slate-400">A página principal sobre "Estudo de Dispersão Atmosférica" será o nosso **HUB**: o guia mais completo do mercado. Todo o conteúdo de suporte, como páginas de serviços e artigos de blog (**SPOKES**), apontará para ela, criando uma rede de autoridade que o Google adora.</p>
+                </div>
+            </section>
+            
+            <!-- Tecnologia -->
+            <section class="animated-item">
+                <div class="text-center max-w-3xl mx-auto">
+                     <h3 class="text-4xl font-bold text-white">Tecnologia de Ponta: A Vantagem Competitiva</h3>
+                     <p class="mt-4 text-lg text-slate-400">Um site profissional exige uma tecnologia superior. Abandonamos o WordPress em favor de uma arquitetura moderna que entrega performance e segurança inigualáveis.</p>
+                </div>
+                <div class="mt-16 grid md:grid-cols-2 gap-8">
+                     <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
+                        <h4 class="text-xl font-bold text-white">Velocidade Extrema</h4>
+                        <p class="mt-2 text-slate-400">Utilizaremos tecnologia de ponta (Hugo) que pré-monta todo o site. Resultado: seu site carregará quase instantaneamente, oferecendo uma experiência de usuário impecável e ganhando a preferência do Google.</p>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
+                        <h4 class="text-xl font-bold text-white">Autonomia e Controle</h4>
+                        <p class="mt-2 text-slate-400">Você terá um painel de controle moderno e intuitivo (Strapi) para gerenciar todo o conteúdo — blog, serviços, estudos de caso — com total autonomia, sem precisar de um desenvolvedor.</p>
+                    </div>
+                </div>
+            </section>
+
+             <!-- Conversão -->
+            <section class="animated-item">
+                <div class="text-center max-w-3xl mx-auto">
+                     <h3 class="text-4xl font-bold text-white">Projetado para Converter</h3>
+                     <p class="mt-4 text-lg text-slate-400">Cada pixel e cada palavra serão intencionalmente posicionados para transformar visitantes em clientes, construindo uma jornada de confiança e clareza.</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 text-center">
+                        <svg class="mx-auto h-12 w-12 text-blue-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        <h4 class="mt-6 text-xl font-bold text-white">Jornada de Confiança</h4>
+                        <p class="mt-2 text-slate-400 text-sm">Desde a primeira visita, construiremos credibilidade com provas sociais, selos de conformidade e a apresentação dos especialistas por trás da marca.</p>
+                    </div>
+                     <!-- Card 2 -->
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 text-center">
+                        <svg class="mx-auto h-12 w-12 text-blue-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 6 4 6-4 6-4-6Z"/><path d="M6 12h12"/></svg>
+                        <h4 class="mt-6 text-xl font-bold text-white">Conteúdo de Autoridade</h4>
+                        <p class="mt-2 text-slate-400 text-sm">O site será o guia definitivo sobre o tema, respondendo a todas as dúvidas e demonstrando uma expertise que convence e converte.</p>
+                    </div>
+                     <!-- Card 3 -->
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 text-center">
+                        <svg class="mx-auto h-12 w-12 text-blue-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+                        <h4 class="mt-6 text-xl font-bold text-white">Design Persuasivo</h4>
+                        <p class="mt-2 text-slate-400 text-sm">Cada botão, cada texto e cada imagem terá o propósito de guiar o usuário de forma clara e intuitiva até a ação mais importante: o contato.</p>
+                    </div>
+                </div>
+             </section>
+
+             <!-- Final CTA -->
+             <section class="animated-item">
+                <div class="relative bg-gradient-to-r from-blue-600 to-sky-500 rounded-2xl p-12 text-center overflow-hidden">
+                    <div class="absolute inset-0 bg-slate-900/50 mix-blend-multiply"></div>
+                    <div class="relative">
+                        <h3 class="text-4xl font-extrabold text-white">Este é o Ponto de Virada.</h3>
+                        <p class="mt-4 text-lg text-blue-100 max-w-2xl mx-auto">Este plano não é apenas sobre um novo site. É sobre construir um ativo digital que posicionará a FC Gestão como a líder incontestável em seu mercado, gerando novas oportunidades de forma consistente e automática.</p>
+                        <div class="mt-8">
+                            <span class="inline-block rounded-full bg-white px-8 py-4 text-lg font-bold text-blue-600 shadow-lg">
+                               <a href="../demo.html">Visualizar DEMO</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+             </section>
+        </div>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-700 mt-28">
+        <div class="container mx-auto px-6 py-8 text-center text-slate-500">
+            <p>&copy; 2025 FC Gestão Estratégica. Proposta confidencial.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const items = document.querySelectorAll('.animated-item');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        // Apply a staggered delay based on the item's index
+                        // Use a smaller delay for a quicker feel
+                        entry.target.style.transitionDelay = `${index * 120}ms`;
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            items.forEach(item => {
+                observer.observe(item);
+            });
+        });
+    </script>
+</body>
+</html>
